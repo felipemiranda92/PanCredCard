@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		646CC5C22B604B4500470965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C12B604B4500470965 /* AppDelegate.swift */; };
 		646CC5C42B604B4500470965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C32B604B4500470965 /* SceneDelegate.swift */; };
-		646CC5C62B604B4500470965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C52B604B4500470965 /* ViewController.swift */; };
+		646CC5C62B604B4500470965 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C52B604B4500470965 /* LoginViewController.swift */; };
 		646CC5C92B604B4500470965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5C72B604B4500470965 /* Main.storyboard */; };
 		646CC5CB2B604B4600470965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5CA2B604B4600470965 /* Assets.xcassets */; };
 		646CC5CE2B604B4600470965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5CC2B604B4600470965 /* LaunchScreen.storyboard */; };
+		646CC5D72B60512F00470965 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5D62B60512F00470965 /* HomeViewController.swift */; };
+		646CC5D92B60516B00470965 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5D82B60516B00470965 /* HomeViewController.storyboard */; };
+		646CC5DD2B605E5700470965 /* credCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5DB2B605E5700470965 /* credCardTableViewCell.swift */; };
+		646CC5DE2B605E5700470965 /* credCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5DC2B605E5700470965 /* credCardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		646CC5BE2B604B4500470965 /* PanCredCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanCredCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		646CC5C12B604B4500470965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		646CC5C32B604B4500470965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		646CC5C52B604B4500470965 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		646CC5C52B604B4500470965 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		646CC5C82B604B4500470965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		646CC5CA2B604B4600470965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		646CC5CD2B604B4600470965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646CC5CF2B604B4600470965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646CC5D62B60512F00470965 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		646CC5D82B60516B00470965 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		646CC5DB2B605E5700470965 /* credCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = credCardTableViewCell.swift; sourceTree = "<group>"; };
+		646CC5DC2B605E5700470965 /* credCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = credCardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		646CC5C02B604B4500470965 /* PanCredCard */ = {
 			isa = PBXGroup;
 			children = (
+				646CC5D52B6050E700470965 /* Home */,
 				646CC5C12B604B4500470965 /* AppDelegate.swift */,
 				646CC5C32B604B4500470965 /* SceneDelegate.swift */,
-				646CC5C52B604B4500470965 /* ViewController.swift */,
+				646CC5C52B604B4500470965 /* LoginViewController.swift */,
 				646CC5C72B604B4500470965 /* Main.storyboard */,
 				646CC5CA2B604B4600470965 /* Assets.xcassets */,
 				646CC5CC2B604B4600470965 /* LaunchScreen.storyboard */,
 				646CC5CF2B604B4600470965 /* Info.plist */,
 			);
 			path = PanCredCard;
+			sourceTree = "<group>";
+		};
+		646CC5D52B6050E700470965 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				646CC5DA2B605E2F00470965 /* Cells */,
+				646CC5D62B60512F00470965 /* HomeViewController.swift */,
+				646CC5D82B60516B00470965 /* HomeViewController.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		646CC5DA2B605E2F00470965 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				646CC5DB2B605E5700470965 /* credCardTableViewCell.swift */,
+				646CC5DC2B605E5700470965 /* credCardTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +153,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646CC5D92B60516B00470965 /* HomeViewController.storyboard in Resources */,
 				646CC5CE2B604B4600470965 /* LaunchScreen.storyboard in Resources */,
 				646CC5CB2B604B4600470965 /* Assets.xcassets in Resources */,
+				646CC5DE2B605E5700470965 /* credCardTableViewCell.xib in Resources */,
 				646CC5C92B604B4500470965 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646CC5C62B604B4500470965 /* ViewController.swift in Sources */,
+				646CC5C62B604B4500470965 /* LoginViewController.swift in Sources */,
 				646CC5C22B604B4500470965 /* AppDelegate.swift in Sources */,
 				646CC5C42B604B4500470965 /* SceneDelegate.swift in Sources */,
+				646CC5D72B60512F00470965 /* HomeViewController.swift in Sources */,
+				646CC5DD2B605E5700470965 /* credCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
