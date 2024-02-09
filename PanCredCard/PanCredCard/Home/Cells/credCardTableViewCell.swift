@@ -27,18 +27,15 @@ class credCardTableViewCell: UITableViewCell {
     }
 
     func configElements() {
-        
         subView.backgroundColor = .white
-        
-        nameCreditCardLabel.text = "American Express"
         nameCreditCardLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        
-        numberCreditCardLabel.text = "12312412412"
         
     }
     
-    func setupCell() {
-        
+    func setupCell(data: Card) {
+        nameCreditCardLabel.text = data.name
+        numberCreditCardLabel.text = data.number
+//        credCardImageView.image = data.image
     }
     
 }

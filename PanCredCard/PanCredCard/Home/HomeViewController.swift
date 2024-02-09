@@ -9,10 +9,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var viewModel: CredCardViewModel = CredCardViewModel()
+    
     @IBOutlet weak var listCredCardTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.fetchCredCard()
         configListCredCardTableView()
     }
     
@@ -25,12 +28,14 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        return viewModel.numberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: credCardTableViewCell.identifier, for: indexPath) as? credCardTableViewCell
+        cell?.setupCell(data: viewModel.getCards(indexPath: indexPath))
         return cell ?? UITableViewCell()
     }
     

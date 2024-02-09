@@ -17,6 +17,10 @@
 		646CC5D92B60516B00470965 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5D82B60516B00470965 /* HomeViewController.storyboard */; };
 		646CC5DD2B605E5700470965 /* credCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5DB2B605E5700470965 /* credCardTableViewCell.swift */; };
 		646CC5DE2B605E5700470965 /* credCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646CC5DC2B605E5700470965 /* credCardTableViewCell.xib */; };
+		64A5EE312B758D4C00FDCCEF /* CredCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE302B758D4C00FDCCEF /* CredCardViewModel.swift */; };
+		64A5EE342B758E2100FDCCEF /* CredCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE332B758E2100FDCCEF /* CredCardService.swift */; };
+		64A5EE372B758F3F00FDCCEF /* CredCard.json in Resources */ = {isa = PBXBuildFile; fileRef = 64A5EE362B758F3F00FDCCEF /* CredCard.json */; };
+		64A5EE3A2B758FCB00FDCCEF /* CredCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE392B758FCB00FDCCEF /* CredCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		646CC5D82B60516B00470965 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		646CC5DB2B605E5700470965 /* credCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = credCardTableViewCell.swift; sourceTree = "<group>"; };
 		646CC5DC2B605E5700470965 /* credCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = credCardTableViewCell.xib; sourceTree = "<group>"; };
+		64A5EE302B758D4C00FDCCEF /* CredCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardViewModel.swift; sourceTree = "<group>"; };
+		64A5EE332B758E2100FDCCEF /* CredCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardService.swift; sourceTree = "<group>"; };
+		64A5EE362B758F3F00FDCCEF /* CredCard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CredCard.json; sourceTree = "<group>"; };
+		64A5EE392B758FCB00FDCCEF /* CredCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,8 @@
 		646CC5C02B604B4500470965 /* PanCredCard */ = {
 			isa = PBXGroup;
 			children = (
+				64A5EE382B758FB600FDCCEF /* Model */,
+				64A5EE352B758F0A00FDCCEF /* Mock */,
 				646CC5D52B6050E700470965 /* Home */,
 				646CC5C12B604B4500470965 /* AppDelegate.swift */,
 				646CC5C32B604B4500470965 /* SceneDelegate.swift */,
@@ -79,6 +89,8 @@
 		646CC5D52B6050E700470965 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				64A5EE322B758E0200FDCCEF /* Service */,
+				64A5EE2F2B758D2600FDCCEF /* ViewModel */,
 				646CC5DA2B605E2F00470965 /* Cells */,
 				646CC5D62B60512F00470965 /* HomeViewController.swift */,
 				646CC5D82B60516B00470965 /* HomeViewController.storyboard */,
@@ -93,6 +105,38 @@
 				646CC5DC2B605E5700470965 /* credCardTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		64A5EE2F2B758D2600FDCCEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64A5EE302B758D4C00FDCCEF /* CredCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64A5EE322B758E0200FDCCEF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				64A5EE332B758E2100FDCCEF /* CredCardService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		64A5EE352B758F0A00FDCCEF /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				64A5EE362B758F3F00FDCCEF /* CredCard.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		64A5EE382B758FB600FDCCEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64A5EE392B758FCB00FDCCEF /* CredCard.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				646CC5D92B60516B00470965 /* HomeViewController.storyboard in Resources */,
+				64A5EE372B758F3F00FDCCEF /* CredCard.json in Resources */,
 				646CC5CE2B604B4600470965 /* LaunchScreen.storyboard in Resources */,
 				646CC5CB2B604B4600470965 /* Assets.xcassets in Resources */,
 				646CC5DE2B605E5700470965 /* credCardTableViewCell.xib in Resources */,
@@ -168,10 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A5EE342B758E2100FDCCEF /* CredCardService.swift in Sources */,
+				64A5EE3A2B758FCB00FDCCEF /* CredCard.swift in Sources */,
 				646CC5C62B604B4500470965 /* LoginViewController.swift in Sources */,
 				646CC5C22B604B4500470965 /* AppDelegate.swift in Sources */,
 				646CC5C42B604B4500470965 /* SceneDelegate.swift in Sources */,
 				646CC5D72B60512F00470965 /* HomeViewController.swift in Sources */,
+				64A5EE312B758D4C00FDCCEF /* CredCardViewModel.swift in Sources */,
 				646CC5DD2B605E5700470965 /* credCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

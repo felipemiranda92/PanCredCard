@@ -1,0 +1,64 @@
+{
+    "cards": [
+        {
+            "id": 32143412,
+            "name": "American Express",
+            "alias": "Amex",
+            "credit": true,
+            "debit": true,
+            "number": "5169 8308 7140 3628",
+            "codSec": "2051",
+            "image": "dainsdiuabdiuasbduiabdiusabsaiubdnsa"
+        },
+        {
+            "id": 879587543,
+            "name": "Diners Club",
+            "alias": "Diners",
+            "credit": true,
+            "debit": true,
+            "number": "5309 5085 3492 3761",
+            "codSec": "572",
+            "image": "asuihdaiugfuysgfasugfiuasgfaiusfgsaiugfiaugfiuasg"
+        },
+        {
+            "id": 984543,
+            "name": "Elo",
+            "alias": "Elo",
+            "credit": true,
+            "debit": true,
+            "number": "4485 5622 0893 3452",
+            "codSec": "156",
+            "image": "saiuhfgaiusegfuisgfugfuegFUGeiufgw"
+        },
+        {
+            "id": 5435344,
+            "name": "Hiper",
+            "alias": "Hiper",
+            "credit": true,
+            "debit": true,
+            "number": "3810 072941 0468",
+            "codSec": "535",
+            "image": "auigfusygfausfgasifhiahfiuagfuagfiughaesiufbeswufgaiuw"
+        },
+        {
+            "id": 2763543,
+            "name": "MasterCard",
+            "alias": "Master",
+            "credit": true,
+            "debit": true,
+            "number": "6062 8203 5096 2273",
+            "codSec": "115",
+            "image": "hFIUDSfiugauisgfauigsfaugfafsgaugfs"
+        },
+        {
+            "id": 7537543,
+            "name": "Visa",
+            "alias": "Visa",
+            "credit": true,
+            "debit": true,
+            "number": "4539 3285 2509 9138",
+            "codSec": "518",
+            "image": "auhsdauigdauifdagiufguiasgfauigfua"
+        }
+    ]
+}
