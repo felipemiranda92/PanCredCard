@@ -32,4 +32,16 @@ class CredCardViewModel {
         return credCard?.cards[indexPath.row] ?? Card(id: 0, name: "", alias: "", credit: false, debit: false, number: "", codSEC: "", image: "")
     }
     
+    func maskCreditCardNumber(number: String) -> String {
+        guard number.count >= 4 else {
+            return "Número inválido"
+        }
+        
+        let lastFourDigits = String(number.suffix(4))
+        let maskedDigits = String(repeating: "*", count: number.count - 4)
+        
+        return maskedDigits + lastFourDigits
+    }
+    
+    
 }

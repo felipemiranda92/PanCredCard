@@ -39,5 +39,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let detailsScreen = UIStoryboard(name: String(describing: detailsViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: detailsViewController.self)) { coder -> detailsViewController? in
+            return detailsViewController(coder: coder, creditCard: self.viewModel.getCards(indexPath: indexPath))
+        }
+        
+        navigationController?.pushViewController(detailsScreen , animated: true)
+        
+    }
     
 }

@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func pressedEnterButton(_ sender: UIButton) {
         
-        let homeScreen = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
+        let homeScreen = UIStoryboard(name: String(describing: HomeViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as? HomeViewController
         navigationController?.pushViewController(homeScreen ?? UIViewController(), animated: true)
     }
     

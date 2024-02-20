@@ -9,13 +9,15 @@ import UIKit
 
 class credCardTableViewCell: UITableViewCell {
     
+    var viewModel: CredCardViewModel = CredCardViewModel()
+    
     @IBOutlet weak var subView: UIView!
     
     @IBOutlet weak var nameCreditCardLabel: UILabel!
     @IBOutlet weak var numberCreditCardLabel: UILabel!
     @IBOutlet weak var credCardImageView: UIImageView!
     
-    static let identifier: String = "credCardTableViewCell"
+    static let identifier: String = String(describing: credCardTableViewCell.self)
     
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
@@ -34,8 +36,9 @@ class credCardTableViewCell: UITableViewCell {
     
     func setupCell(data: Card) {
         nameCreditCardLabel.text = data.name
-        numberCreditCardLabel.text = data.number
+        numberCreditCardLabel.text = viewModel.maskCreditCardNumber(number: data.number)
 //        credCardImageView.image = data.image
     }
+    
     
 }
