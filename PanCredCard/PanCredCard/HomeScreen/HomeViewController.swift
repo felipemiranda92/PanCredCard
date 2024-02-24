@@ -41,6 +41,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let selectedCard = viewModel.getCards(indexPath: indexPath)
+        viewModel.saveCardNumber(cardNumber: selectedCard.number, forCardID: selectedCard.id)
+        
         let detailsScreen = UIStoryboard(name: String(describing: detailsViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: detailsViewController.self)) { coder -> detailsViewController? in
             return detailsViewController(coder: coder, creditCard: self.viewModel.getCards(indexPath: indexPath))
         }

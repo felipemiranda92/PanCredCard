@@ -21,6 +21,7 @@
 		64A5EE342B758E2100FDCCEF /* CredCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE332B758E2100FDCCEF /* CredCardService.swift */; };
 		64A5EE372B758F3F00FDCCEF /* CredCard.json in Resources */ = {isa = PBXBuildFile; fileRef = 64A5EE362B758F3F00FDCCEF /* CredCard.json */; };
 		64A5EE3A2B758FCB00FDCCEF /* CredCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE392B758FCB00FDCCEF /* CredCard.swift */; };
+		64DAF3882B881C3B0074C416 /* detailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAF3872B881C3B0074C416 /* detailsViewModel.swift */; };
 		64E9A0632B80226F006C776B /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E9A0622B80226F006C776B /* detailsViewController.swift */; };
 		64E9A0672B80230A006C776B /* detailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E9A0662B80230A006C776B /* detailsViewController.storyboard */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		64A5EE332B758E2100FDCCEF /* CredCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardService.swift; sourceTree = "<group>"; };
 		64A5EE362B758F3F00FDCCEF /* CredCard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CredCard.json; sourceTree = "<group>"; };
 		64A5EE392B758FCB00FDCCEF /* CredCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCard.swift; sourceTree = "<group>"; };
+		64DAF3872B881C3B0074C416 /* detailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewModel.swift; sourceTree = "<group>"; };
 		64E9A0622B80226F006C776B /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 		64E9A0662B80230A006C776B /* detailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = detailsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,9 +146,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		64DAF3862B881C190074C416 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64DAF3872B881C3B0074C416 /* detailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		64E9A0612B80214A006C776B /* DetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				64DAF3862B881C190074C416 /* ViewModel */,
 				64E9A0622B80226F006C776B /* detailsViewController.swift */,
 				64E9A0662B80230A006C776B /* detailsViewController.storyboard */,
 			);
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A5EE342B758E2100FDCCEF /* CredCardService.swift in Sources */,
+				64DAF3882B881C3B0074C416 /* detailsViewModel.swift in Sources */,
 				64A5EE3A2B758FCB00FDCCEF /* CredCard.swift in Sources */,
 				646CC5C62B604B4500470965 /* LoginViewController.swift in Sources */,
 				64E9A0632B80226F006C776B /* detailsViewController.swift in Sources */,

@@ -12,6 +12,7 @@ class CredCardViewModel {
     
     private var service = CredCardService()
     private var credCard: CredCard?
+    private let service_keyChain = "PanCredCard"
     
     func fetchCredCard() {
         service.getCredCardMock { result in
@@ -44,4 +45,51 @@ class CredCardViewModel {
     }
     
     
+    func saveCardNumber(cardNumber: String, forCardID cardID: Int) {
+        guard let data = cardNumber.data(using: .utf8) else { return }
+        
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: service_keyChain,
+            kSecAttrAccount as String: "\(cardID)",
+            kSecValueData as String: data
+        ]
+        
+        SecItemDelete(query as CFDictionary)
+        SecItemAdd(query as CFDictionary, nil)
+        print("ok")
+    }
+    
+    func loadCardNumber(forCardID cardID: Int) -> String? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: service_keyChain,
+            kSecAttrAccount as String: "\(cardID)",
+            kSecReturnData as String: kCFBooleanTrue!,
+            kSecMatchLimit as String: kSecMatchLimitOne
+        ]
+        
+        var result: AnyObject?
+        let status = SecItemCopyMatching(query as CFDictionary, &result)
+        
+        guard status == errSecSuccess, let data = result as? Data else {
+            return nil
+        }
+        
+        return String(data: data, encoding: .utf8)
+    }
+    
+    func deleteCardNumber(forCardID cardID: Int) {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: service_keyChain,
+            kSecAttrAccount as String: "\(cardID)"
+        ]
+        
+        SecItemDelete(query as CFDictionary)
+    }
+
+    
+    
 }
+

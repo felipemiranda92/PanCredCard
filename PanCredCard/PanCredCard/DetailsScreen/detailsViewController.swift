@@ -16,7 +16,7 @@ class detailsViewController: UIViewController {
     @IBOutlet weak var credCardNumberLabel: UILabel!
     @IBOutlet weak var credCardCodSecLabel: UILabel!
     
-    
+    var viewModel: detailsViewModel = detailsViewModel()
     var creditCard: Card?
     
     
@@ -41,34 +41,14 @@ class detailsViewController: UIViewController {
         credCardAliasLabel.text = creditCard?.alias
         
         if let creditCard = creditCard {
-            creditLabel.text = configureCreditLabel(creditCard: creditCard)
+            creditLabel.text = viewModel.configureCreditLabel(creditCard: creditCard)
         }
         
         if let creditCard = creditCard {
-            credCardDebitLabel.text = configureDebitLabel(creditCard: creditCard)
+            credCardDebitLabel.text = viewModel.configureDebitLabel(creditCard: creditCard)
         }
         credCardNumberLabel.text = creditCard?.number
         credCardCodSecLabel.text = creditCard?.codSEC
     }
 }
 
-
-extension detailsViewController {
-    
-    func configureCreditLabel(creditCard: Card) -> String {
-        if creditCard.credit == true {
-            return  "Função crédito ativa"
-        } else {
-            return  "Função crédito inativa"
-        }
-    }
-    
-    func configureDebitLabel(creditCard: Card) -> String {
-        if creditCard.credit == true {
-            return  "Função débito ativa"
-        } else {
-            return  "Função débito inativa"
-        }
-    }
-    
-}
