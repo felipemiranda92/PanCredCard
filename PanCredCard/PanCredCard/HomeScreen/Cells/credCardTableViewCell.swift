@@ -37,7 +37,9 @@ class credCardTableViewCell: UITableViewCell {
     func setupCell(data: Card) {
         nameCreditCardLabel.text = data.name
         numberCreditCardLabel.text = viewModel.maskCreditCardNumber(number: data.number)
-//        credCardImageView.image = data.image
+        if let imageData = viewModel.loadImageForCard(imageHex: data.image) {
+            credCardImageView.image = UIImage(data: imageData)
+        }
     }
     
     

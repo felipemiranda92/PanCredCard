@@ -48,6 +48,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return detailsViewController(coder: coder, creditCard: self.viewModel.getCards(indexPath: indexPath))
         }
         
+        viewModel.accessibility()
         navigationController?.pushViewController(detailsScreen , animated: true)
         
     }

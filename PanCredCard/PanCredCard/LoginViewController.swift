@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class LoginViewController: UIViewController {
 
@@ -21,6 +22,8 @@ class LoginViewController: UIViewController {
         
         let homeScreen = UIStoryboard(name: String(describing: HomeViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as? HomeViewController
         navigationController?.pushViewController(homeScreen ?? UIViewController(), animated: true)
+        
+        AudioServicesPlaySystemSound(SystemSoundID(1104))
     }
     
     func configElements() {

@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import AudioToolbox
 
 class CredCardViewModel {
     
@@ -44,6 +46,19 @@ class CredCardViewModel {
         return maskedDigits + lastFourDigits
     }
     
+    func loadImageForCard(imageHex: String) -> Data? {
+        var hex = imageHex
+        
+        if hex.hasPrefix("data:image/png;base64,") {
+            hex = String(hex.dropFirst("data:image/png;base64,".count))
+        }
+        
+        guard let imageData = Data(base64Encoded: hex, options: .ignoreUnknownCharacters) else {
+            return nil
+        }
+        
+        return imageData
+    }
     
     func saveCardNumber(cardNumber: String, forCardID cardID: Int) {
         guard let data = cardNumber.data(using: .utf8) else { return }
@@ -57,7 +72,6 @@ class CredCardViewModel {
         
         SecItemDelete(query as CFDictionary)
         SecItemAdd(query as CFDictionary, nil)
-        print("ok")
     }
     
     func loadCardNumber(forCardID cardID: Int) -> String? {
@@ -87,6 +101,14 @@ class CredCardViewModel {
         ]
         
         SecItemDelete(query as CFDictionary)
+    }
+    
+    func accessibility() {
+        let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+        feedbackGenerator.prepare()
+        feedbackGenerator.impactOccurred()
+        
+        AudioServicesPlaySystemSound(SystemSoundID(1104))
     }
 
     
