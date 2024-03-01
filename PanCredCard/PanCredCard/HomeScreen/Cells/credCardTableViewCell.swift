@@ -31,6 +31,7 @@ class credCardTableViewCell: UITableViewCell {
     func configElements() {
         subView.backgroundColor = .white
         nameCreditCardLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+//        credCardImageView.contentMode = .scaleToFill
         
     }
     

@@ -11,7 +11,6 @@ import AudioToolbox
 
 class CredCardViewModel {
     
-    
     private var service = CredCardService()
     private var credCard: CredCard?
     private let service_keyChain = "PanCredCard"
@@ -47,13 +46,8 @@ class CredCardViewModel {
     }
     
     func loadImageForCard(imageHex: String) -> Data? {
-        var hex = imageHex
         
-        if hex.hasPrefix("data:image/png;base64,") {
-            hex = String(hex.dropFirst("data:image/png;base64,".count))
-        }
-        
-        guard let imageData = Data(base64Encoded: hex, options: .ignoreUnknownCharacters) else {
+        guard let imageData = Data(base64Encoded: imageHex, options: .ignoreUnknownCharacters) else {
             return nil
         }
         
