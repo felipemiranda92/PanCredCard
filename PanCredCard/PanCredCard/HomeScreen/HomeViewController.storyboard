@@ -41,6 +41,7 @@
                     </view>
                     <connections>
                         <outlet property="listCredCardTableView" destination="fNN-8z-9pt" id="eXl-w7-qSN"/>
+                        <outlet property="logoLabel" destination="nA5-Aq-sXY" id="n4Z-cd-zS1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641491E72BA06C17007278B9 /* CredCardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641491E62BA06C17007278B9 /* CredCardViewModelTest.swift */; };
 		646CC5C22B604B4500470965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C12B604B4500470965 /* AppDelegate.swift */; };
 		646CC5C42B604B4500470965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C32B604B4500470965 /* SceneDelegate.swift */; };
 		646CC5C62B604B4500470965 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C52B604B4500470965 /* LoginViewController.swift */; };
@@ -21,12 +22,24 @@
 		64A5EE342B758E2100FDCCEF /* CredCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE332B758E2100FDCCEF /* CredCardService.swift */; };
 		64A5EE372B758F3F00FDCCEF /* CredCard.json in Resources */ = {isa = PBXBuildFile; fileRef = 64A5EE362B758F3F00FDCCEF /* CredCard.json */; };
 		64A5EE3A2B758FCB00FDCCEF /* CredCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5EE392B758FCB00FDCCEF /* CredCard.swift */; };
+		64C0B0932B9F14BF0052DD13 /* PanCredCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0B0922B9F14BF0052DD13 /* PanCredCardTests.swift */; };
 		64DAF3882B881C3B0074C416 /* detailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAF3872B881C3B0074C416 /* detailsViewModel.swift */; };
 		64E9A0632B80226F006C776B /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E9A0622B80226F006C776B /* detailsViewController.swift */; };
 		64E9A0672B80230A006C776B /* detailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E9A0662B80230A006C776B /* detailsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		64C0B0942B9F14BF0052DD13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 646CC5B62B604B4500470965 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 646CC5BD2B604B4500470965;
+			remoteInfo = PanCredCard;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		641491E62BA06C17007278B9 /* CredCardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardViewModelTest.swift; sourceTree = "<group>"; };
 		646CC5BE2B604B4500470965 /* PanCredCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanCredCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		646CC5C12B604B4500470965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		646CC5C32B604B4500470965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +56,8 @@
 		64A5EE332B758E2100FDCCEF /* CredCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardService.swift; sourceTree = "<group>"; };
 		64A5EE362B758F3F00FDCCEF /* CredCard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CredCard.json; sourceTree = "<group>"; };
 		64A5EE392B758FCB00FDCCEF /* CredCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCard.swift; sourceTree = "<group>"; };
+		64C0B0902B9F14BF0052DD13 /* PanCredCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanCredCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C0B0922B9F14BF0052DD13 /* PanCredCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanCredCardTests.swift; sourceTree = "<group>"; };
 		64DAF3872B881C3B0074C416 /* detailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewModel.swift; sourceTree = "<group>"; };
 		64E9A0622B80226F006C776B /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 		64E9A0662B80230A006C776B /* detailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = detailsViewController.storyboard; sourceTree = "<group>"; };
@@ -56,6 +71,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64C0B08D2B9F14BF0052DD13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				646CC5C02B604B4500470965 /* PanCredCard */,
+				64C0B0912B9F14BF0052DD13 /* PanCredCardTests */,
 				646CC5BF2B604B4500470965 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				646CC5BE2B604B4500470965 /* PanCredCard.app */,
+				64C0B0902B9F14BF0052DD13 /* PanCredCardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +170,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		64C0B0912B9F14BF0052DD13 /* PanCredCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				64C0B0922B9F14BF0052DD13 /* PanCredCardTests.swift */,
+				641491E62BA06C17007278B9 /* CredCardViewModelTest.swift */,
+			);
+			path = PanCredCardTests;
+			sourceTree = "<group>";
+		};
 		64DAF3862B881C190074C416 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +217,24 @@
 			productReference = 646CC5BE2B604B4500470965 /* PanCredCard.app */;
 			productType = "com.apple.product-type.application";
 		};
+		64C0B08F2B9F14BF0052DD13 /* PanCredCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C0B0962B9F14BF0052DD13 /* Build configuration list for PBXNativeTarget "PanCredCardTests" */;
+			buildPhases = (
+				64C0B08C2B9F14BF0052DD13 /* Sources */,
+				64C0B08D2B9F14BF0052DD13 /* Frameworks */,
+				64C0B08E2B9F14BF0052DD13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C0B0952B9F14BF0052DD13 /* PBXTargetDependency */,
+			);
+			name = PanCredCardTests;
+			productName = PanCredCardTests;
+			productReference = 64C0B0902B9F14BF0052DD13 /* PanCredCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +247,10 @@
 				TargetAttributes = {
 					646CC5BD2B604B4500470965 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					64C0B08F2B9F14BF0052DD13 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 646CC5BD2B604B4500470965;
 					};
 				};
 			};
@@ -213,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				646CC5BD2B604B4500470965 /* PanCredCard */,
+				64C0B08F2B9F14BF0052DD13 /* PanCredCardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +285,13 @@
 				646CC5DE2B605E5700470965 /* credCardTableViewCell.xib in Resources */,
 				646CC5C92B604B4500470965 /* Main.storyboard in Resources */,
 				64E9A0672B80230A006C776B /* detailsViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0B08E2B9F14BF0052DD13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +315,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64C0B08C2B9F14BF0052DD13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641491E72BA06C17007278B9 /* CredCardViewModelTest.swift in Sources */,
+				64C0B0932B9F14BF0052DD13 /* PanCredCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64C0B0952B9F14BF0052DD13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 646CC5BD2B604B4500470965 /* PanCredCard */;
+			targetProxy = 64C0B0942B9F14BF0052DD13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		646CC5C72B604B4500470965 /* Main.storyboard */ = {
@@ -447,6 +527,40 @@
 			};
 			name = Release;
 		};
+		64C0B0972B9F14BF0052DD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.PanCredCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
+			};
+			name = Debug;
+		};
+		64C0B0982B9F14BF0052DD13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.PanCredCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,6 +578,15 @@
 			buildConfigurations = (
 				646CC5D32B604B4600470965 /* Debug */,
 				646CC5D42B604B4600470965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C0B0962B9F14BF0052DD13 /* Build configuration list for PBXNativeTarget "PanCredCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C0B0972B9F14BF0052DD13 /* Debug */,
+				64C0B0982B9F14BF0052DD13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
