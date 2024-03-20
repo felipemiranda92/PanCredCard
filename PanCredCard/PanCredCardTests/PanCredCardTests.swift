@@ -1,8 +1,8 @@
 //
-//  PanCredCardTests.swift
-//  PanCredCardTests
+//  PanCredCardTests_1.swift
+//  PanCredCardTests_1
 //
-//  Created by Felipe Miranda Santos on 11/03/24.
+//  Created by Felipe Miranda Santos on 20/03/24.
 //
 
 import XCTest
@@ -25,5 +25,5 @@ final class PanCredCardTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-    
+
 }
