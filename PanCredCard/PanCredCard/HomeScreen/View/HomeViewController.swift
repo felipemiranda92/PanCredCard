@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     func configListCredCardTableView() {
         listCredCardTableView.delegate = self
         listCredCardTableView.dataSource = self
-        listCredCardTableView.register(credCardTableViewCell.nib(), forCellReuseIdentifier: credCardTableViewCell.identifier)
+        listCredCardTableView.register(CredCardTableViewCell.nib(), forCellReuseIdentifier: CredCardTableViewCell.identifier)
         
     }
     
@@ -47,7 +47,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: credCardTableViewCell.identifier, for: indexPath) as? credCardTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CredCardTableViewCell.identifier, for: indexPath) as? CredCardTableViewCell
         cell?.setupCell(data: viewModel.getCards(indexPath: indexPath))
         return cell ?? UITableViewCell()
     }
@@ -57,8 +57,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let selectedCard = viewModel.getCards(indexPath: indexPath)
         viewModel.saveCardNumber(cardNumber: selectedCard.number, forCardID: selectedCard.id)
         
-        let detailsScreen = UIStoryboard(name: String(describing: detailsViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: detailsViewController.self)) { coder -> detailsViewController? in
-            return detailsViewController(coder: coder, creditCard: self.viewModel.getCards(indexPath: indexPath))
+        let detailsScreen = UIStoryboard(name: String(describing: DetailsViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: DetailsViewController.self)) { coder -> DetailsViewController? in
+            return DetailsViewController(coder: coder, creditCard: self.viewModel.getCards(indexPath: indexPath))
         }
         
         viewModel.accessibility()

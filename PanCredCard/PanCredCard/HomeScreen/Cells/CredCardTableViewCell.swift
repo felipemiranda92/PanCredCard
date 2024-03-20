@@ -7,7 +7,7 @@
 
 import UIKit
 
-class credCardTableViewCell: UITableViewCell {
+class CredCardTableViewCell: UITableViewCell {
     
     var viewModel: CredCardViewModel = CredCardViewModel()
     
@@ -17,7 +17,7 @@ class credCardTableViewCell: UITableViewCell {
     @IBOutlet weak var numberCreditCardLabel: UILabel!
     @IBOutlet weak var credCardImageView: UIImageView!
     
-    static let identifier: String = String(describing: credCardTableViewCell.self)
+    static let identifier: String = String(describing: CredCardTableViewCell.self)
     
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class detailsViewController: UIViewController {
+class DetailsViewController: UIViewController {
     
     @IBOutlet weak var credCardNameLabel: UILabel!
     @IBOutlet weak var credCardAliasLabel: UILabel!
@@ -16,7 +16,7 @@ class detailsViewController: UIViewController {
     @IBOutlet weak var credCardNumberLabel: UILabel!
     @IBOutlet weak var credCardCodSecLabel: UILabel!
     
-    var viewModel: detailsViewModel = detailsViewModel()
+    var viewModel: DetailsViewModel = DetailsViewModel()
     var creditCard: Card?
     
     
@@ -42,11 +42,9 @@ class detailsViewController: UIViewController {
         
         if let creditCard = creditCard {
             creditLabel.text = viewModel.configureCreditLabel(creditCard: creditCard)
-        }
-        
-        if let creditCard = creditCard {
             credCardDebitLabel.text = viewModel.configureDebitLabel(creditCard: creditCard)
         }
+        
         credCardNumberLabel.text = creditCard?.number
         credCardCodSecLabel.text = creditCard?.codSEC
     }

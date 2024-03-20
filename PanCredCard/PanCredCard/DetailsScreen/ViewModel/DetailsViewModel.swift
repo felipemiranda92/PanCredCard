@@ -7,7 +7,7 @@
 
 import Foundation
 
-class detailsViewModel {
+class DetailsViewModel {
     
     func configureCreditLabel(creditCard: Card) -> String {
         if creditCard.credit == true {
