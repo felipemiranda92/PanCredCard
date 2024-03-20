@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6447941D2BABA4970026135A /* PanCredCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447941C2BABA4970026135A /* PanCredCardTests.swift */; };
+		644794242BABA4DA0026135A /* CredCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644794232BABA4DA0026135A /* CredCardViewModelTests.swift */; };
 		646CC5C22B604B4500470965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C12B604B4500470965 /* AppDelegate.swift */; };
 		646CC5C42B604B4500470965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C32B604B4500470965 /* SceneDelegate.swift */; };
 		646CC5C62B604B4500470965 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CC5C52B604B4500470965 /* LoginViewController.swift */; };
@@ -24,19 +26,10 @@
 		64DAF3882B881C3B0074C416 /* detailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAF3872B881C3B0074C416 /* detailsViewModel.swift */; };
 		64E9A0632B80226F006C776B /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E9A0622B80226F006C776B /* detailsViewController.swift */; };
 		64E9A0672B80230A006C776B /* detailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E9A0662B80230A006C776B /* detailsViewController.storyboard */; };
-		64ECB4942BAB9E27007979D7 /* PanCredCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ECB4932BAB9E27007979D7 /* PanCredCardTests.swift */; };
-		64ECB49B2BAB9EED007979D7 /* CredCardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ECB49A2BAB9EED007979D7 /* CredCardViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64C0B0942B9F14BF0052DD13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 646CC5B62B604B4500470965 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 646CC5BD2B604B4500470965;
-			remoteInfo = PanCredCard;
-		};
-		64ECB4952BAB9E27007979D7 /* PBXContainerItemProxy */ = {
+		6447941E2BABA4970026135A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 646CC5B62B604B4500470965 /* Project object */;
 			proxyType = 1;
@@ -46,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6447941A2BABA4970026135A /* PanCredCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanCredCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6447941C2BABA4970026135A /* PanCredCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanCredCardTests.swift; sourceTree = "<group>"; };
+		644794232BABA4DA0026135A /* CredCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardViewModelTests.swift; sourceTree = "<group>"; };
 		646CC5BE2B604B4500470965 /* PanCredCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanCredCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		646CC5C12B604B4500470965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		646CC5C32B604B4500470965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,31 +58,20 @@
 		64A5EE332B758E2100FDCCEF /* CredCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardService.swift; sourceTree = "<group>"; };
 		64A5EE362B758F3F00FDCCEF /* CredCard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CredCard.json; sourceTree = "<group>"; };
 		64A5EE392B758FCB00FDCCEF /* CredCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCard.swift; sourceTree = "<group>"; };
-		64C0B0902B9F14BF0052DD13 /* PanCredCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanCredCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DAF3872B881C3B0074C416 /* detailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewModel.swift; sourceTree = "<group>"; };
 		64E9A0622B80226F006C776B /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 		64E9A0662B80230A006C776B /* detailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = detailsViewController.storyboard; sourceTree = "<group>"; };
-		64ECB4912BAB9E27007979D7 /* PanCredCardTests_1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanCredCardTests_1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64ECB4932BAB9E27007979D7 /* PanCredCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanCredCardTests.swift; sourceTree = "<group>"; };
-		64ECB49A2BAB9EED007979D7 /* CredCardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCardViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		644794172BABA4970026135A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		646CC5BB2B604B4500470965 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64C0B08D2B9F14BF0052DD13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64ECB48E2BAB9E27007979D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,11 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6447941B2BABA4970026135A /* PanCredCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				6447941C2BABA4970026135A /* PanCredCardTests.swift */,
+				644794232BABA4DA0026135A /* CredCardViewModelTests.swift */,
+			);
+			path = PanCredCardTests;
+			sourceTree = "<group>";
+		};
 		646CC5B52B604B4500470965 = {
 			isa = PBXGroup;
 			children = (
 				646CC5C02B604B4500470965 /* PanCredCard */,
-				64ECB4922BAB9E27007979D7 /* PanCredCardTests */,
+				6447941B2BABA4970026135A /* PanCredCardTests */,
 				646CC5BF2B604B4500470965 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				646CC5BE2B604B4500470965 /* PanCredCard.app */,
-				64C0B0902B9F14BF0052DD13 /* PanCredCardTests.xctest */,
-				64ECB4912BAB9E27007979D7 /* PanCredCardTests_1.xctest */,
+				6447941A2BABA4970026135A /* PanCredCardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,18 +197,27 @@
 			path = DetailsScreen;
 			sourceTree = "<group>";
 		};
-		64ECB4922BAB9E27007979D7 /* PanCredCardTests */ = {
-			isa = PBXGroup;
-			children = (
-				64ECB4932BAB9E27007979D7 /* PanCredCardTests.swift */,
-				64ECB49A2BAB9EED007979D7 /* CredCardViewModelTest.swift */,
-			);
-			path = PanCredCardTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		644794192BABA4970026135A /* PanCredCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 644794202BABA4970026135A /* Build configuration list for PBXNativeTarget "PanCredCardTests" */;
+			buildPhases = (
+				644794162BABA4970026135A /* Sources */,
+				644794172BABA4970026135A /* Frameworks */,
+				644794182BABA4970026135A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6447941F2BABA4970026135A /* PBXTargetDependency */,
+			);
+			name = PanCredCardTests;
+			productName = PanCredCardTests;
+			productReference = 6447941A2BABA4970026135A /* PanCredCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		646CC5BD2B604B4500470965 /* PanCredCard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 646CC5D22B604B4600470965 /* Build configuration list for PBXNativeTarget "PanCredCard" */;
@@ -233,42 +235,6 @@
 			productReference = 646CC5BE2B604B4500470965 /* PanCredCard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		64C0B08F2B9F14BF0052DD13 /* PanCredCardTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64C0B0962B9F14BF0052DD13 /* Build configuration list for PBXNativeTarget "PanCredCardTests" */;
-			buildPhases = (
-				64C0B08C2B9F14BF0052DD13 /* Sources */,
-				64C0B08D2B9F14BF0052DD13 /* Frameworks */,
-				64C0B08E2B9F14BF0052DD13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64C0B0952B9F14BF0052DD13 /* PBXTargetDependency */,
-			);
-			name = PanCredCardTests;
-			productName = PanCredCardTests;
-			productReference = 64C0B0902B9F14BF0052DD13 /* PanCredCardTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		64ECB4902BAB9E27007979D7 /* PanCredCardTests_1 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64ECB4972BAB9E27007979D7 /* Build configuration list for PBXNativeTarget "PanCredCardTests_1" */;
-			buildPhases = (
-				64ECB48D2BAB9E27007979D7 /* Sources */,
-				64ECB48E2BAB9E27007979D7 /* Frameworks */,
-				64ECB48F2BAB9E27007979D7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64ECB4962BAB9E27007979D7 /* PBXTargetDependency */,
-			);
-			name = PanCredCardTests_1;
-			productName = PanCredCardTests_1;
-			productReference = 64ECB4912BAB9E27007979D7 /* PanCredCardTests_1.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -279,16 +245,12 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					644794192BABA4970026135A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 646CC5BD2B604B4500470965;
+					};
 					646CC5BD2B604B4500470965 = {
 						CreatedOnToolsVersion = 15.0;
-					};
-					64C0B08F2B9F14BF0052DD13 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 646CC5BD2B604B4500470965;
-					};
-					64ECB4902BAB9E27007979D7 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 646CC5BD2B604B4500470965;
 					};
 				};
 			};
@@ -306,13 +268,19 @@
 			projectRoot = "";
 			targets = (
 				646CC5BD2B604B4500470965 /* PanCredCard */,
-				64C0B08F2B9F14BF0052DD13 /* PanCredCardTests */,
-				64ECB4902BAB9E27007979D7 /* PanCredCardTests_1 */,
+				644794192BABA4970026135A /* PanCredCardTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		644794182BABA4970026135A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		646CC5BC2B604B4500470965 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,23 +295,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C0B08E2B9F14BF0052DD13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64ECB48F2BAB9E27007979D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		644794162BABA4970026135A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644794242BABA4DA0026135A /* CredCardViewModelTests.swift in Sources */,
+				6447941D2BABA4970026135A /* PanCredCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		646CC5BA2B604B4500470965 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,34 +324,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C0B08C2B9F14BF0052DD13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64ECB48D2BAB9E27007979D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64ECB49B2BAB9EED007979D7 /* CredCardViewModelTest.swift in Sources */,
-				64ECB4942BAB9E27007979D7 /* PanCredCardTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		64C0B0952B9F14BF0052DD13 /* PBXTargetDependency */ = {
+		6447941F2BABA4970026135A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 646CC5BD2B604B4500470965 /* PanCredCard */;
-			targetProxy = 64C0B0942B9F14BF0052DD13 /* PBXContainerItemProxy */;
-		};
-		64ECB4962BAB9E27007979D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 646CC5BD2B604B4500470965 /* PanCredCard */;
-			targetProxy = 64ECB4952BAB9E27007979D7 /* PBXContainerItemProxy */;
+			targetProxy = 6447941E2BABA4970026135A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +354,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		644794212BABA4970026135A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.PanCredCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
+			};
+			name = Debug;
+		};
+		644794222BABA4970026135A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.PanCredCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
+			};
+			name = Release;
+		};
 		646CC5D02B604B4600470965 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -585,77 +561,18 @@
 			};
 			name = Release;
 		};
-		64C0B0972B9F14BF0052DD13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = backfront.PanCredCardTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
-			};
-			name = Debug;
-		};
-		64C0B0982B9F14BF0052DD13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = backfront.PanCredCardTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
-			};
-			name = Release;
-		};
-		64ECB4982BAB9E27007979D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "backfront.PanCredCardTests-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
-			};
-			name = Debug;
-		};
-		64ECB4992BAB9E27007979D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "backfront.PanCredCardTests-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanCredCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PanCredCard";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		644794202BABA4970026135A /* Build configuration list for PBXNativeTarget "PanCredCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644794212BABA4970026135A /* Debug */,
+				644794222BABA4970026135A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		646CC5B92B604B4500470965 /* Build configuration list for PBXProject "PanCredCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -670,24 +587,6 @@
 			buildConfigurations = (
 				646CC5D32B604B4600470965 /* Debug */,
 				646CC5D42B604B4600470965 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		64C0B0962B9F14BF0052DD13 /* Build configuration list for PBXNativeTarget "PanCredCardTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64C0B0972B9F14BF0052DD13 /* Debug */,
-				64C0B0982B9F14BF0052DD13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		64ECB4972BAB9E27007979D7 /* Build configuration list for PBXNativeTarget "PanCredCardTests_1" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64ECB4982BAB9E27007979D7 /* Debug */,
-				64ECB4992BAB9E27007979D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

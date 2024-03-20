@@ -6,11 +6,8 @@
 	<dict>
 		<key>PanCredCard.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>PanCredCardTests.xcscheme_^#shared#^_</key>
-		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -22,7 +19,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>64955B1F2BABA11B0040EBB2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>64C0B08F2B9F14BF0052DD13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64ECB4902BAB9E27007979D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,6 +1,6 @@
 //
-//  PanCredCardTests_1.swift
-//  PanCredCardTests_1
+//  PanCredCardTests.swift
+//  PanCredCardTests
 //
 //  Created by Felipe Miranda Santos on 20/03/24.
 //
