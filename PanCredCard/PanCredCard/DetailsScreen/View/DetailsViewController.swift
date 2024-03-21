@@ -38,9 +38,12 @@ class DetailsViewController: UIViewController {
     func setupDetails() {
         
         credCardNameLabel.text = creditCard?.name
-        credCardNameLabel.text = creditCard?.alias
         credCardNameLabel.isAccessibilityElement = true
         credCardNameLabel.accessibilityHint = "Esta é a bandeira do cartão selecionado"
+        
+        credCardAliasLabel.text = creditCard?.alias
+        credCardAliasLabel.isAccessibilityElement = true
+        credCardAliasLabel.accessibilityHint = "Esta é a alias do cartão selecionado"
         
         
         if let creditCard = creditCard {
