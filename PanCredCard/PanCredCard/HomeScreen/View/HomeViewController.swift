@@ -12,13 +12,17 @@ class HomeViewController: UIViewController {
     var viewModel: CredCardViewModel = CredCardViewModel()
     
     @IBOutlet weak var logoLabel: UILabel!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var listCredCardTableView: UITableView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchCredCard()
         configListCredCardTableView()
         configElements()
+        configSearchBar()
+        viewModel.fetchCredCard {
+            self.listCredCardTableView.reloadData()
+        }
     }
     
     func configListCredCardTableView() {
@@ -26,6 +30,10 @@ class HomeViewController: UIViewController {
         listCredCardTableView.dataSource = self
         listCredCardTableView.register(CredCardTableViewCell.nib(), forCellReuseIdentifier: CredCardTableViewCell.identifier)
         
+    }
+    
+    func configSearchBar() {
+        searchBar.delegate = self
     }
     
     func configElements() {
@@ -36,6 +44,8 @@ class HomeViewController: UIViewController {
         
         listCredCardTableView.separatorStyle = .singleLine
         listCredCardTableView.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        
+        searchBar.searchBarStyle = .minimal
     }
     
 }
@@ -66,4 +76,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
+}
+
+extension HomeViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterCards(searchText: searchText)
+        listCredCardTableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        viewModel.filterCards(searchText: searchBar.text ?? "")
+        listCredCardTableView.reloadData()
+    }
 }

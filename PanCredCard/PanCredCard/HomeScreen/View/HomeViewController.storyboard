@@ -16,37 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fNN-8z-9pt">
-                                <rect key="frame" x="10" y="160" width="373" height="608"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-Aq-sXY">
                                 <rect key="frame" x="20" y="89" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="g01-Y6-Vc0">
+                                <rect key="frame" x="5" y="130" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="euk-V7-Zub"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fNN-8z-9pt">
+                                <rect key="frame" x="13" y="201" width="367" height="597"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fNN-8z-9pt" secondAttribute="trailing" constant="13" id="2Ct-Ge-A9X"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nA5-Aq-sXY" secondAttribute="trailing" constant="20" id="9xu-8L-9zz"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fNN-8z-9pt" secondAttribute="bottom" constant="50" id="B0C-eJ-lBT"/>
                             <constraint firstItem="nA5-Aq-sXY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="BQX-Xh-Ord"/>
+                            <constraint firstItem="g01-Y6-Vc0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="Cce-7k-yaX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fNN-8z-9pt" secondAttribute="bottom" constant="20" id="ORh-vq-DJC"/>
+                            <constraint firstItem="fNN-8z-9pt" firstAttribute="top" secondItem="g01-Y6-Vc0" secondAttribute="bottom" constant="15" id="Wsv-Ec-k5U"/>
                             <constraint firstItem="nA5-Aq-sXY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="acC-Pd-GPC"/>
-                            <constraint firstItem="fNN-8z-9pt" firstAttribute="top" secondItem="nA5-Aq-sXY" secondAttribute="bottom" constant="50" id="bCC-Mi-Qug"/>
-                            <constraint firstItem="fNN-8z-9pt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="fpK-nk-x4T"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fNN-8z-9pt" secondAttribute="trailing" constant="10" id="yrJ-b1-S8k"/>
+                            <constraint firstItem="g01-Y6-Vc0" firstAttribute="top" secondItem="nA5-Aq-sXY" secondAttribute="bottom" constant="20" id="acX-HC-gDA"/>
+                            <constraint firstItem="g01-Y6-Vc0" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="5" id="qac-OV-r5h"/>
+                            <constraint firstItem="fNN-8z-9pt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="v91-RY-ark"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="listCredCardTableView" destination="fNN-8z-9pt" id="eXl-w7-qSN"/>
                         <outlet property="logoLabel" destination="nA5-Aq-sXY" id="n4Z-cd-zS1"/>
+                        <outlet property="searchBar" destination="g01-Y6-Vc0" id="32u-e4-bgY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="4"/>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
