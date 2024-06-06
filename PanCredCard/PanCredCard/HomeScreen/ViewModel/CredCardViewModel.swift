@@ -13,25 +13,39 @@ class CredCardViewModel {
     
     private var service = CredCardService()
     private var credCard: CredCard?
+    private var filteredCards: [Card] = []
     private let service_keyChain = "PanCredCard"
     
-    func fetchCredCard() {
+    func fetchCredCard(completion: @escaping () -> Void) {
         service.getCredCardMock { result in
             switch result {
             case .success(let success):
                 credCard = success
+                filteredCards = success.cards
+                completion()
             case .failure(let failure):
                 print(failure.localizedDescription)
+                completion()
             }
         }
     }
     
     func numberOfRows() -> Int {
-        return credCard?.cards.count ?? 0
+        return filteredCards.count
     }
     
     func getCards(indexPath: IndexPath) -> Card {
-        return credCard?.cards[indexPath.row] ?? Card(id: 0, name: "", alias: "", credit: false, debit: false, number: "", codSEC: "", image: "")
+        return filteredCards[indexPath.row]
+    }
+    
+    func filterCards(searchText: String) {
+        if searchText.isEmpty {
+            filteredCards = credCard?.cards ?? []
+        } else {
+            filteredCards = credCard?.cards.filter { card in
+                card.name.lowercased().contains(searchText.lowercased())
+            } ?? []
+        }
     }
     
     func maskCreditCardNumber(number: String) -> String {
