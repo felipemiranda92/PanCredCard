@@ -14,14 +14,21 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var logoLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var listCredCardTableView: UITableView!
+    
+    private let activityIndicator = UIActivityIndicatorView(style: .large)
         
     override func viewDidLoad() {
         super.viewDidLoad()
         configListCredCardTableView()
         configElements()
         configSearchBar()
+        setupActivityIndicator()
+        showLoading()
         viewModel.fetchCredCard {
-            self.listCredCardTableView.reloadData()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.hideLoading()
+                self.listCredCardTableView.reloadData()
+            }
         }
     }
     
@@ -48,6 +55,28 @@ class HomeViewController: UIViewController {
         searchBar.searchBarStyle = .minimal
     }
     
+    private func setupActivityIndicator() {
+            activityIndicator.center = view.center
+            activityIndicator.hidesWhenStopped = true
+            view.addSubview(activityIndicator)
+        }
+        
+        private func showLoading() {
+            activityIndicator.alpha = 0.0
+            activityIndicator.startAnimating()
+            UIView.animate(withDuration: 0.3) {
+                self.activityIndicator.alpha = 1.0
+            }
+        }
+        
+        private func hideLoading() {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.activityIndicator.alpha = 0.0
+            }) { _ in
+                self.activityIndicator.stopAnimating()
+            }
+        }
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -63,6 +92,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showLoading()
         
         let selectedCard = viewModel.getCards(indexPath: indexPath)
         viewModel.saveCardNumber(cardNumber: selectedCard.number, forCardID: selectedCard.id)
@@ -72,8 +102,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         viewModel.accessibility()
-        navigationController?.pushViewController(detailsScreen , animated: true)
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.hideLoading() // Esconder o indicador de carregamento
+            self.navigationController?.pushViewController(detailsScreen, animated: true)
+        }
     }
     
 }
